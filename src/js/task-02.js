@@ -7,6 +7,18 @@ const ingredients = [
   'Condiments',
 ];
 
+// const ingList = document.querySelector('#ingredients');
+// const fragment = document.createDocumentFragment()
+
+// ingredients.forEach(ingredient => {
+//   const liItem = document.createElement('li');
+//   liItem.textContent = ingredient;
+//   liItem.classList.add('item');
+//   fragment.appendChild(liItem);
+// })
+
+// ingList.appendChild(fragment);
+
 const ingredientsList = document.querySelector('#ingredients');
 
 const fragment = document.createDocumentFragment();
@@ -19,3 +31,4 @@ ingredients.forEach((ingredientText) => {
 });
 
 ingredientsList.appendChild(fragment);
+
