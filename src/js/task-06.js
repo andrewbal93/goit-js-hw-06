@@ -1,7 +1,8 @@
 const inputElement = document.querySelector('#validation-input')
 
 inputElement.addEventListener('blur', function () {
-    if (inputElement.value.length === parseInt(inputElement.getAttribute("data-length"))) {
+    const trimValue = inputElement.value.trim()
+    if (trimValue.length === parseInt(inputElement.getAttribute("data-length"))) {
         inputElement.classList.remove('invalid')
         inputElement.classList.add('valid')
     }
